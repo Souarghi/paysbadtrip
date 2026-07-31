@@ -1,0 +1,4 @@
+# Dépendances
+node_modules
+/nodejs/node_modules
+/coverage
