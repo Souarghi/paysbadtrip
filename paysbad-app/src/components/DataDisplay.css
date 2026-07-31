@@ -1,0 +1,26 @@
+.data-card {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+.data-card h3 {
+  margin-top: 0;
+  color: var(--text-h);
+}
+
+.data-card p {
+  margin-bottom: 8px;
+}
+
+.data-card a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.data-card a:hover {
+  text-decoration: underline;
+}

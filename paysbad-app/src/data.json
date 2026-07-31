@@ -1,0 +1,217 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "name": "Bruxelles, Belgique",
+      "coordinates": [50.8503, 4.3517],
+      "details": "Capitale de la Belgique et de l'Europe. Connue pour sa Grand-Place, son Atomium et ses gaufres."
+    },
+    {
+      "id": 2,
+      "name": "Amsterdam, Pays-Bas",
+      "coordinates": [52.3676, 4.9041],
+      "details": "Célèbre pour ses canaux, ses musées d'art et son histoire riche."
+    },
+    {
+      "id": 3,
+      "name": "Rotterdam, Pays-Bas",
+      "coordinates": [51.9244, 4.4777],
+      "details": "Ville portuaire moderne avec une architecture audacieuse."
+    },
+    {
+      "id": 4,
+      "name": "Anvers, Belgique",
+      "coordinates": [51.2194, 4.4025],
+      "details": "Connue pour son quartier des diamantaires, sa mode et son port."
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "type": "Logement",
+      "name": "Hôtel à Bruxelles (Booking)",
+      "confirmation": "BRU123XYZ",
+      "dates": "07/08/2026 - 10/08/2026",
+      "details": "Confirmation: Booking.com_ ConfirmationBruxelles.pdf"
+    },
+    {
+      "id": 2,
+      "type": "Transport",
+      "name": "Train A/R (SNCF Connect)",
+      "confirmation": "SNCF-ABCD123",
+      "dates": "07/08 & 14/08/2026",
+      "details": "Justificatifs: 20260807_... & 20260814_..."
+    },
+    {
+      "id": 3,
+      "type": "Musée",
+      "name": "Van Gogh Museum",
+      "confirmation": "VGM-TICKET-9876",
+      "dates": "11/08/2026",
+      "details": "Billet: VanGoghMuseumGroup-....pdf"
+    },
+    {
+      "id": 4,
+      "type": "Activité",
+      "name": "Tour en bateau sur les canaux",
+      "confirmation": "CANAL-TOUR-456",
+      "dates": "12/08/2026",
+      "details": "A réserver sur place"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "title": "Contacts d'urgence",
+      "content": "Ambassade de France: +31 70 312 5800. Numéro d'urgence européen: 112."
+    },
+    {
+      "id": 2,
+      "title": "Idées de plats à goûter",
+      "content": "Belgique: Frites, Gaufres de Liège/Bruxelles, Carbonnade flamande. Pays-Bas: Stroopwafel, Haring, Bitterballen."
+    },
+    {
+      "id": 3,
+      "title": "Phrases utiles en néerlandais",
+      "content": "Bonjour: Goedendag. Merci: Dank u wel. Au revoir: Tot ziens. Combien ça coûte?: Hoeveel kost dit?"
+    }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "title": "Transports à Amsterdam (GVB)",
+      "url": "https://www.gvb.nl/"
+    },
+    {
+      "id": 2,
+      "title": "Transports à Bruxelles (STIB)",
+      "url": "https://www.stib-mivb.be/index.htm?l=fr"
+    },
+    {
+      "id": 3,
+      "title": "Que faire à Rotterdam (Timeout)",
+      "url": "https://www.timeout.com/rotterdam/things-to-do/best-things-to-do-in-rotterdam"
+    }
+  ],
+  "programme": [
+    {
+      "id": "jour1",
+      "date": "07/08/2026",
+      "day": "Vendredi",
+      "city": "Bruxelles",
+      "emoji": "🇧🇪",
+      "events": [
+        { "time": "08:18", "description": "Départ train (Paris -> Bruxelles)", "icon": "train" },
+        { "time": "10:00", "description": "Arrivée Bruxelles, dépot des affaires", "icon": "hotel" },
+        { "time": "12:00", "description": "Déjeuner : Friterie", "icon": "food" },
+        { "time": "14:00", "description": "Visite du centre : Grand Place, Manneken Pis", "icon": "walk" },
+        { "time": "18:25", "description": "Retour de J-B", "icon": "person" },
+        { "time": "20:00", "description": "Dîner et soirée dans le centre", "icon": "night" }
+      ]
+    },
+    {
+      "id": "jour2",
+      "date": "08/08/2026",
+      "day": "Samedi",
+      "city": "Bruxelles",
+      "emoji": "🇧🇪",
+      "events": [
+        { "time": "10:00", "description": "Visite de l'Atomium", "icon": "attraction" },
+        { "time": "13:00", "description": "Pique-nique au Parc de Laeken", "icon": "food" },
+        { "time": "15:00", "description": "Quartier européen", "icon": "walk" },
+        { "time": "19:00", "description": "Apéro Delirium Café", "icon": "bar" }
+      ]
+    },
+    {
+      "id": "jour3",
+      "date": "09/08/2026",
+      "day": "Dimanche",
+      "city": "Anvers",
+      "emoji": "🇧🇪",
+      "events": [
+        { "time": "09:00", "description": "Train pour Anvers", "icon": "train" },
+        { "time": "10:00", "description": "Visite du quartier des diamantaires & de la gare", "icon": "walk" },
+        { "time": "13:00", "description": "Déjeuner dans le centre historique", "icon": "food" },
+        { "time": "15:00", "description": "Musée de la Mode (MoMu)", "icon": "museum" },
+        { "time": "18:00", "description": "Retour vers Bruxelles", "icon": "train" }
+      ]
+    },
+    {
+      "id": "jour4",
+      "date": "10/08/2026",
+      "day": "Lundi",
+      "city": "Amsterdam",
+      "emoji": "🇳🇱",
+      "events": [
+        { "time": "11:00", "description": "Train pour Amsterdam", "icon": "train" },
+        { "time": "13:00", "description": "Arrivée et check-in logement", "icon": "hotel" },
+        { "time": "15:00", "description": "Exploration du quartier De Pijp", "icon": "walk" },
+        { "time": "19:00", "description": "Dîner au Foodhallen", "icon": "food" }
+      ]
+    },
+    {
+      "id": "jour5",
+      "date": "11/08/2026",
+      "day": "Mardi",
+      "city": "Amsterdam",
+      "emoji": "🇳🇱",
+      "events": [
+        { "time": "10:00", "description": "Visite du Rijksmuseum", "icon": "museum" },
+        { "time": "14:00", "description": "Visite du Van Gogh Museum (réservé)", "icon": "museum" },
+        { "time": "17:00", "description": "Balade dans le Vondelpark", "icon": "park" },
+        { "time": "20:00", "description": "Soirée quartier rouge", "icon": "night" }
+      ]
+    },
+    {
+        "id": "jour6",
+        "date": "12/08/2026",
+        "day": "Mercredi",
+        "city": "Amsterdam",
+        "emoji": "🇳🇱",
+        "events": [
+            { "time": "10:00", "description": "Maison d'Anne Frank (à réserver !)", "icon": "museum" },
+            { "time": "13:00", "description": "Marché aux fleurs", "icon": "shop" },
+            { "time": "15:00", "description": "Tour en bateau sur les canaux", "icon": "boat" },
+            { "time": "18:00", "description": "Shopping dans les 9 Straatjes", "icon": "shop" }
+        ]
+    },
+    {
+        "id": "jour7",
+        "date": "13/08/2026",
+        "day": "Jeudi",
+        "city": "Rotterdam",
+        "emoji": "🇳🇱",
+        "events": [
+            { "time": "09:00", "description": "Train pour Rotterdam", "icon": "train" },
+            { "time": "10:30", "description": "Visite des Maisons Cubes", "icon": "attraction" },
+            { "time": "12:30", "description": "Déjeuner au Markthal", "icon": "food" },
+            { "time": "14:30", "description": "Pont Erasmus & architecture moderne", "icon": "walk" },
+            { "time": "18:00", "description": "Retour Amsterdam", "icon": "train" }
+        ]
+    },
+    {
+        "id": "jour8",
+        "date": "14/08/2026",
+        "day": "Vendredi",
+        "city": "Paris",
+        "emoji": "🇫🇷",
+        "events": [
+            { "time": "Après-midi", "description": "Derniers souvenirs, valises", "icon": "shop" },
+            { "time": "17:10", "description": "Départ train (Amsterdam -> Paris)", "icon": "train" },
+            { "time": "Soirée", "description": "Arrivée à Paris, fin du voyage", "icon": "home" }
+        ]
+    }
+  ],
+  "shoppingList": [
+    { "id": 1, "item": "Dentifrice", "completed": false },
+    { "id": 2, "item": "Crème solaire", "completed": false },
+    { "id": 3, "item": "Batterie externe", "completed": true },
+    { "id": 4, "item": "Adaptateur de voyage", "completed": true },
+    { "id": 5, "item": "Gourde", "completed": false },
+    { "id": 6, "item": "K-way / Parapluie", "completed": false },
+    { "id": 7, "item": "Lingettes", "completed": false },
+    { "id": 8, "item": "Spécialités à ramener (fromage, bières)", "completed": false },
+    { "id": 9, "item": "Tiquets de transports", "completed": false },
+    { "id": 10, "item": "Cartes postales", "completed": false }
+  ]
+}
