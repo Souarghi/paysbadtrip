@@ -1,12 +1,5 @@
 {
-  "routes": [
-    { "src": "/[^.]+", "dest": "/", "status": 200 },
-    {
-      "src": "/(.*)",
-      "headers": { "cache-control": "s-maxage=31536000,immutable" },
-      "continue": true
-    },
-    { "handle": "filesystem" }
-  ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
