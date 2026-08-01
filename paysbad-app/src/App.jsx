@@ -6,9 +6,10 @@ import Notes from './components/Notes';
 import Links from './components/Links';
 import Programme from './components/Programme';
 import ShoppingList from './components/ShoppingList';
+import BoardGames from './components/BoardGames';
 
 function App() {
-  const [view, setView] = useState('programme'); // 'programme', 'map', 'reservations', 'notes', 'links', 'shopping'
+  const [view, setView] = useState('programme'); // 'programme', 'map', 'reservations', 'notes', 'links', 'shopping', 'games'
 
   const renderView = () => {
     switch (view) {
@@ -23,7 +24,9 @@ function App() {
       case 'links':
         return <Links />;
       case 'shopping':
-        return <ShoppingList />;
+        return <ShoppingList />; // Ce composant gère maintenant ses propres données
+      case 'games':
+        return <BoardGames />;
       default:
         return <Programme />;
     }
@@ -37,6 +40,7 @@ function App() {
       <li><a href="#notes" className={view === 'notes' ? 'active' : ''} onClick={() => setView('notes')}>Notes</a></li>
       <li><a href="#links" className={view === 'links' ? 'active' : ''} onClick={() => setView('links')}>Liens Utiles</a></li>
       <li><a href="#shopping" className={view === 'shopping' ? 'active' : ''} onClick={() => setView('shopping')}>Liste de courses</a></li>
+      <li><a href="#games" className={view === 'games' ? 'active' : ''} onClick={() => setView('games')}>Liste des jeux</a></li>
     </ul>
   );
   
@@ -61,6 +65,10 @@ function App() {
       <a href="#shopping" className={view === 'shopping' ? 'active' : ''} onClick={() => setView('shopping')}>
         <svg className="icon" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-9.8-3.2c.1-.1.1-.2 0-.3l-1-1.7c-.1-.1-.2-.2-.4-.2H3V9h2l3.6 6.5c.1.1.2.2.4.2h7.8c.2 0 .3-.1.4-.2l2.3-4.4c.1-.1 0-.3-.1-.4l-11-4.6c-.1 0-.3.1-.3.2L3.1 9H2.6c-.3 0-.5.2-.5.5v.1c0 .2.1.4.3.4h.4l2.5 4.3.2.3c0 .1-.1.2-.2.2l-2.7.9c-.2 0-.3.2-.3.4v.1c0 .2.2.4.4.4h1.5c.2 0 .4-.1.4-.3l.7-1.2z"/></svg>
         Courses
+      </a>
+      <a href="#games" className={view === 'games' ? 'active' : ''} onClick={() => setView('games')}>
+        <svg className="icon" viewBox="0 0 24 24"><path d="M22 12V4H2v8c1.1 0 2 .9 2 2s-.9 2-2 2v4h20v-4c-1.1 0-2-.9-2-2s.9-2 2-2zM8 11H4V6h4v5zm6 0h-4V6h4v5zm6 0h-4V6h4v5z"/></svg>
+        Jeux
       </a>
     </>
   );

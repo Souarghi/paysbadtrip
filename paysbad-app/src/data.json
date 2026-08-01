@@ -2,12 +2,30 @@
   "locations": [
     {
       "id": 1,
-      "name": "Bruxelles, Belgique",
+      "name": "Gare de Bruxelles-Midi",
       "coordinates": [
         50.8467,
         4.3517
       ],
-      "details": "Capitale de la Belgique. Connue pour sa Grand-Place, son Atomium et sa vie nocturne."
+      "details": "Point d'arrivée à Bruxelles."
+    },
+    {
+      "id": 1.1,
+      "name": "Delirium Café",
+      "coordinates": [50.8488, 4.3523],
+      "details": "Bar célèbre pour sa très grande sélection de bières."
+    },
+    {
+      "id": 1.2,
+      "name": "Grand-Place de Bruxelles",
+      "coordinates": [50.8467, 4.3525],
+      "details": "Place centrale de Bruxelles, site du patrimoine mondial de l'UNESCO."
+    },
+    {
+      "id": 1.3,
+      "name": "Atomium",
+      "coordinates": [50.8948, 4.3415],
+      "details": "Monument emblématique de Bruxelles construit pour l'Exposition universelle de 1958."
     },
     {
       "id": 2,
@@ -16,7 +34,7 @@
         52.35,
         4.6167
       ],
-      "details": "Base pour le séjour aux Pays-Bas. Adresse : Jan Van den Bergstraat 87."
+      "details": "Notre logement. Adresse : Jan Van den Bergstraat 87."
     },
     {
       "id": 3,
@@ -25,7 +43,7 @@
         52.388,
         4.741
       ],
-      "details": "Lieu de location du van. Adresse : Weerenweg 19, 1161 AE Zwanenburg."
+      "details": "Location du Van (Expeco Cars). Adresse : Weerenweg 19, 1161 AE Zwanenburg."
     },
     {
       "id": 4,
@@ -34,7 +52,13 @@
         52.45,
         5
       ],
-      "details": "Région de villages traditionnels au nord d'Amsterdam (Volendam, Marken)."
+      "details": "Région de villages traditionnels au nord d'Amsterdam."
+    },
+    {
+      "id": 4.1,
+      "name": "Volendam",
+      "coordinates": [52.495, 5.071],
+      "details": "Village de pêcheurs traditionnel."
     },
     {
       "id": 5,
@@ -43,7 +67,7 @@
         52.741,
         6.077
       ],
-      "details": "Le 'Venise du Nord', célèbre pour ses canaux et ses maisons au toit de chaume."
+      "details": "Le 'Venise du Nord', célèbre pour ses canaux."
     },
     {
       "id": 6,
@@ -52,7 +76,7 @@
         51.882,
         4.63
       ],
-      "details": "Site classé à l'UNESCO, célèbre pour son réseau de 19 moulins à vent."
+      "details": "Site UNESCO célèbre pour son réseau de 19 moulins."
     },
     {
       "id": 7,
@@ -61,7 +85,7 @@
         51.9225,
         4.4792
       ],
-      "details": "Ville portuaire moderne avec une architecture audacieuse."
+      "details": "Ville portuaire moderne."
     },
     {
       "id": 8,
@@ -70,7 +94,25 @@
         52.377956,
         4.89707
       ],
-      "details": "Capitale des Pays-Bas, célèbre pour ses canaux, musées et son histoire."
+      "details": "Capitale des Pays-Bas."
+    },
+    {
+      "id": 8.1,
+      "name": "Vondelpark",
+      "coordinates": [52.358, 4.868],
+      "details": "Grand parc urbain à Amsterdam."
+    },
+    {
+      "id": 8.2,
+      "name": "Moco Museum",
+      "coordinates": [52.3585, 4.8811],
+      "details": "Musée d'art moderne et contemporain."
+    },
+    {
+      "id": 8.3,
+      "name": "Maison d'Anne Frank",
+      "coordinates": [52.3752, 4.884],
+      "details": "Maison-musée historique."
     }
   ],
   "reservations": [
@@ -78,7 +120,7 @@
       "id": 1,
       "type": "Logement",
       "name": "Logement à Heemstede",
-      "confirmation": "Jan Frans et Rachida",
+      "status": "booked",
       "dates": "09/08/2026 - 14/08/2026",
       "details": "Adresse: Jan van den Bergstraat 87, 2102 XB HEEMSTEDE. Contact: +31-6-27444080 (prévenir 1h avant l'arrivée)."
     },
@@ -86,7 +128,7 @@
       "id": 2,
       "type": "Transport",
       "name": "Location Van (Expeco Cars)",
-      "confirmation": "VW Transporter HK-238-F",
+      "status": "booked",
       "dates": "11/08/2026 - 13/08/2026",
       "details": "Adresse de récupération/restitution : Weerenweg 19, 1161 AE Zwanenburg."
     },
@@ -94,7 +136,7 @@
       "id": 3,
       "type": "Musée",
       "name": "Maison d'Anne Frank",
-      "confirmation": "À RÉSERVER",
+      "status": "to_book",
       "dates": "14/08/2026",
       "details": "URGENT. Billets disponibles 6 semaines à l'avance le mardi. Viser 09h30."
     },
@@ -102,7 +144,7 @@
       "id": 4,
       "type": "Activité",
       "name": "Croisière à Giethoorn",
-      "confirmation": "À RÉSERVER",
+      "status": "to_book",
       "dates": "11/08/2026",
       "details": "Réservation en ligne conseillée (~9€/pers)."
     },
@@ -110,7 +152,7 @@
       "id": 5,
       "type": "Musée",
       "name": "Moco Museum",
-      "confirmation": "À RÉSERVER",
+      "status": "to_book",
       "dates": "13/08/2026",
       "details": "Billets à prendre en ligne (19,95€)."
     }
@@ -125,11 +167,6 @@
       "id": 2,
       "title": "Infos Pratiques",
       "content": "WiFi Logement: Ziggo7480529 / nofrw7c5bvejcBoa. \nTricount: https://tricount.com/tSkUNTfaHoyjTpgAIS"
-    },
-    {
-      "id": 3,
-      "title": "Jeux prévus",
-      "content": "Esquissé, Uno, Trio, Unlock, Monopoly, Risk, Just One, Poker."
     },
     {
       "id": 4,
